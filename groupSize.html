@@ -1,0 +1,379 @@
+                     <br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Poseidon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-mine navbar-fixed-top" role="navigation">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: #FFFFFF" href="index.html">Poseidon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#researchObjectives">Research Objectives</a>
+                    </li>
+                    <li>
+                        <a href="#experimentdesign">Experiment Design</a>
+                    </li>
+                    <li>
+                        <a href="#results">Results</a>
+                    </li>
+                    <li>
+                        <a href="#conclusion">Conclusion</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="intro-message-experiment">
+                    <h2>The Effect of Group Size on Group Cooperation</h2>
+                    <h3>Paul Wanjohi</h3>
+                    <hr class="intro-divider">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+    <div id="intro" class="content-section-d">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Introduction</h2>
+                <p class="lead">
+                    This study investigates the effects group size has on the 
+                    evolution of cooperation. 
+                    The research objective of this study is to empirically 
+                    investigate the prediction of Reeve and Hölldobler's model 
+                    that larger group sizes exhibit higher cooperation levels 
+                    than smaller ones.
+                    An artificial life experiment using an Agent Based System 
+                    was carried out to perform this investigation. 
+                    It involved two groups with different 
+                    initial group sizes and an environment with a fixed 
+                    resource patchiness value (designed to fix the 
+                    distribution of resources in the environment).
+                    The groups of agents would simulate the foraging activity
+                    and emerging behaviour would be observed and recorded.
+                    <br>
+                    <br> The measure of cooperation 
+                    throughout this study was defined as the fitness value 
+                    assigned to a group. This fitness value incorporates the 
+                    average within-group cooperation values of the members of 
+                    the group and the between-group cooperation of the group 
+                    as a whole.
+                    <br>
+
+
+                </p>
+                <div class="centered">
+                    <a href="papers/wnjpau001_final.pdf" target="_blank" class="btn btn-default btn-lg" type="button">Download Paper</a>
+                    <a href="papers/wnjpau001_litreview.pdf" target="_blank" class="btn btn-default btn-lg" type="button">Literature Review</a>
+                    <a href="https://bitbucket.org/ZMel/poseidon" target="_blank" class="btn btn-default btn-lg" type="button">Framework</a>
+                    <a href="documentation.html" target="_blank" class="btn btn-default btn-lg" type="button">Framework Documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="researchObjectives" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Research Objectives</h2>
+                <p class="lead">
+                    The primary objective is to determine if larger groups of 
+                    autonomous agents have higher levels of cooperations than
+                    small groups of agents. The null hypothesis and alternate 
+                    hypothesis (<em>H<sub>0</sub></em> and <em>H<sub>1</sub></em> respectively) are stated below:
+                    <br>
+                    <br>
+                    <em>H<sub>0</sub>: Group size has a positive effect on levels of
+                        cooperations of a group.
+                    </em>
+                    <br>
+                    <em>H<sub>1</sub>: Group size has no effect on levels of
+                        cooperations of a group.
+                    </em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="experimentdesign" class="content-section-d">
+        <div class="container">
+            <h2>Experiment Design</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-lg-6">
+                <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:9px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:9px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+                .tg .tg-80ir{font-weight:bold;font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;text-align:center;vertical-align:top}
+                .tg .tg-6852{font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;vertical-align:top}
+                .tg .tg-7vr2{font-weight:bold;font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;background-color:#ffffff;vertical-align:top}
+                .tg .tg-whis{font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;text-align:center;vertical-align:top}
+                </style>
+                <table class="tg" style="undefined;table-layout: fixed; width: 583px">
+                <colgroup>
+                <col style="width: 429px">
+                <col style="width: 154px">
+                </colgroup>
+                  <tr>
+                    <th class="tg-7vr2">Parameter</th>
+                    <th class="tg-80ir">Value</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of Groups</td>
+                    <td class="tg-whis">2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of initial agents in Group 0</td>
+                    <td class="tg-whis">2000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of initial agents in Group 1</td>
+                    <td class="tg-whis">200</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of ticks</td>
+                    <td class="tg-whis">2000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of generations</td>
+                    <td class="tg-whis">1000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of patches</td>
+                    <td class="tg-whis">1</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Patch density</td>
+                    <td class="tg-whis">0.038</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Patch Width</td>
+                    <td class="tg-whis">800</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Resource regrowth rate</td>
+                    <td class="tg-whis">100</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of children</td>
+                    <td class="tg-whis">2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Tournament size</td>
+                    <td class="tg-whis">5</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Selection Pressure</td>
+                    <td class="tg-whis">1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Crossover rate</td>
+                    <td class="tg-whis">0.7</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Mutation rate</td>
+                    <td class="tg-whis">0.1</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Energy gained per resource</td>
+                    <td class="tg-whis">20</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Energy Movement cost per tick</td>
+                    <td class="tg-whis">0.2</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Starting agent energy</td>
+                    <td class="tg-whis">30.0</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Field of View</td>
+                    <td class="tg-whis">100</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Environment Width</td>
+                    <td class="tg-whis">800</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Environment Height</td>
+                    <td class="tg-whis">800</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-6852">Number of experiment runs</td>
+                    <td class="tg-whis">20</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-lg-4" style="margin-left: 100px">
+                <h3>Experiment Description</h3>
+                <p class="lead">
+                    The study conducted 5 experiments with different initial group sizes.
+                    These experiments tested a group with 2000 initial number of agents against
+                    a group with 200 initial number of agents. The four experiments that were conducted
+                    fixed the group with 2000 initial number of agents and varied the group with 200 initial 
+                    number of agents to 400, 600, 800 and 1000 for the four experiments respectively.
+                    <br>
+                    <br>
+                    Data was collected from the simulation and processed to provide the average fitness of the groups
+                    across all generations for all the 5 experiments described.
+                </p>
+                <br>
+                <h3>Simulation Parameters</h3>
+                <p class="lead">
+                    On the table illustrated on the left are the parameters used in the experiment. 
+                    The table contains the parameter values for the generation genetic algorithm,
+                    environment and experiment-specific parameters. 
+                    <br>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="results" class="content-section-a">
+        <div class="container">
+            <h2>Results</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <img class="img-responsive" src="img/groupsize/group_fitness.jpg" alt="">
+                    <figcaption style="text-align:center;">Figure 1: Graph Depicting the Fitness Values of the Groups for all Experiments</figcaption>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <p class="lead">
+                    <div class="col-lg-6">
+                        Figure 1 above shows the average fitness values for the 
+                        all the 5 experiments over the 1000 generations. It 
+                        depicts the evolution of cooperation between group of 
+                        different initial sizes. 
+                    </div>
+                    <div class="col-lg-6">
+                        The results demonstrated in the Figure above was 
+                        statistically analysed to test for any significant 
+                        differences among the recorded group fitness values.
+                        This analysis demonstrated statistical significance when comparing the fitness values of both groups. 
+                    </div>
+        
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="conclusion" class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <h2>Conclusions</h2>
+            </div>
+            <div class="row">
+                <br>
+                <p class="lead">
+                    <div class="col-lg-6">
+                        The experiment results demonstrated that the group of 
+                        400 starting size exhibits a significant difference in 
+                        fitness levels when compared to a group of 2000
+                        starting size. Assumptions made in the experiment were 
+                        biologically inspired and were used to tackle the 
+                        design challenges experienced in the experiment.
+                    </div>
+                    <div class="col-lg-6">
+                        Observations from the experiment demonstrated the 
+                        existence of temporary spatial groups of agents that 
+                        follow each other providing a natural way of grouping
+                        agents. Ultimately, the experiment demonstrated that 
+                        there is evidence to suggest that group size has an 
+                        effect on the levels of cooperation of the group
+                        and thus we cannot reject the null hypothesis
+                        (<em>H<sub>0</sub></em>). 
+                    </div>
+        
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="contact" class="banner">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-heading">Contact</h2>
+                    <div class="col-md-4">
+                        <h3 class="section-heading">Zac Melnick</h3>
+                <p class="lead">MLNZAC001
+                    <br>mlnzac001@myuct.ac.za
+                    <br>072 365 0880
+                    <br>Genetic Relatedness</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section-heading">Jacob Clarkson</h3>
+                <p class="lead">CLRJAC004
+                    <br>jacobhclarkson@gmail.com
+                    <br>078 348 4450
+                    <br>Intergroup Competition</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section-heading">Paul Wanjohi</h3>
+                <p class="lead">WNJPAU001
+                    <br>paul.mwanjohi@gmail.com
+                    <br>072 460 7568
+                    <br>Group Size</p>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.banner -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Zac Melnick; Jacob Clarkson; Paul Wanjohi 2015
+                    </p>
+                    <p class="copyright text-muted">Supervisor: Dr Geoff Nitschke</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

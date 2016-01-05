@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Poseidon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-mine navbar-fixed-top" role="navigation">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: #FFFFFF" href="index.html">Poseidon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#researchObjectives">Research Objectives</a>
+                    </li>
+                    <li>
+                        <a href="#paramTesting">Parameter Testing</a>
+                    </li>
+                    <li>
+                        <a href="#results">Results</a>
+                    </li>
+                    <li>
+                        <a href="#breakdown">Work Breakdown</a>
+                    </li>
+                    <li>
+                        <a href="#conclusion">Conclusions</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="intro-message-experiment">
+                    <h2>Artificial Life, Examining Levels of Cooperation between Simulated Insects Dependant on Relatedness Measures</h2>
+                    <h3>Zac Melnick</h3>
+                    <hr class="intro-divider">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+    <div id="intro" class="content-section-d">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Introduction</h2>
+                <p class="lead">
+                    This study investigated the origins of cooperation by analysing the effects of individual relatedness and patch richness on the levels of cooperation observed. As a secondary measure, other factors leading to the evolution of cooperation were explored.
+                    <br>
+                    <br> A range of relatedness values were tested in four different environments with varying resource distributions. The results showed a positive relationship between agent relatedness and the level of cooperation experienced.
+                    <br> The results allowed commentary on the validity of the game theoretic model by Reeve and Hölldobler and provided insight into the origins of cooperation. The study was able to agree with two of the organizational trends mentioned by Reeve and Hölldobler, indicating that higher levels of agent relatedness and higher levels of patch richness (resource density) both lead to higher levels of within-group cooperation.
+                </p>
+                <div class="centered">
+                    <a href="papers/CSHons_FinalPaper_MLNZAC001.pdf" target="_blank" class="btn btn-default btn-lg" type="button">Download Paper</a>
+                    <a href="https://bitbucket.org/ZMel/poseidon" target="_blank" class="btn btn-default btn-lg" type="button">Framework</a>
+                    <a href="documentation.html" target="_blank" class="btn btn-default btn-lg" type="button">Framework Documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="researchObjectives" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Research Objectives</h2>
+                <p class="lead">
+                    The primary objective is to determine if the more genetically related members of a group are, the more likely they will behave cooperatively towards each other. From this the following hypothesis was tested.
+                    <br>
+                    <br>
+                    <em>H1: Higher levels of between-group agent relatedness lead to higher levels of within-group cooperation between agents.</em>
+                    <br>
+                    <br> The secondary objective is to determine if higher levels of patch richness lead to the development of higher cooperation between members of a group. From this the following hypothesis was tested.
+                    <br>
+                    <br>
+                    <em>H2: Higher levels of patch richness (resource density per patch) leads to larger group sizes and more competing groups and therefore a higher degree of within-group cooperation. </em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="paramTesting" class="content-section-b">
+        <div class="container">
+            <h2>Parameters and Parameter Testing Results</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <h3>Parameters</h3>
+                <p class="lead">
+                    By making use of the results below it was possible to choose 600 resources as the default starting value between the relatedness and competition based experiments. This allowed consistency between the two. After various small and large (such as the tables below) testing stages the following parameter values were chosen
+                </p>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <img class="img-responsive" src="img/Relatedness/parameterSettings.png" alt="">
+                </div>
+                <img class="img-responsive" src="img/Relatedness/experimentParameters.png" alt="">
+            </div>
+            <h3>Parameter Testing Results</h3>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/paramTesting1_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/paramTesting2_table.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="results" class="content-section-a">
+        <div class="container">
+            <h2>Graphs Depicting Behaviour of Simulation Under 3 Environments Through all Relatedness Threshold Values</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="img/Relatedness/withinGroup_graph.png" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="img/Relatedness/betweenGroup_graph.png" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="img/Relatedness/groupDiversity_graph.png" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="img/Relatedness/populationDiversity_graph.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <h2>Results</h2>
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h3>Summarized Data From Tests on Relatedness<h3>
+                <p class="lead">
+                    The following tables depict a positive relationship between the relatedness threshold value and the level of within-group cooperation experienced. From these tables it is also possible to compare the results across environments in order to determine how much the environmental configuration affects cooperation.
+                    <br>
+                    <br> The correlations depicted below were used to comment on factors which possibly lead to the increase of within-group cooperation. The correlations are between within-group cooperation and (i) group size (Correlation 1), (ii) number of competing groups (Correlation 2), (iii) group-diversity, (Correlation 3) and (iv) population-diversity (Correlation 4).
+                    <br>
+                    <br> Finally stable ranges depicted were specific cases in each environment where the values obtained from one RT value were not significantly different from the previous
+                </p>
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/env1_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/env2_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/env3_table.png" alt="">
+            </div>
+                        <h3>Summarized Data From Tests on Patch Richness<h3>
+            <div class="row">
+                <p class="lead">
+                    It was found that the level of patch richness plays a significant effect on within-group cooperation. It was also found that this will only occur if there is sufficient competition in the base environment for the change in richness to have an effect on the cooperation found.
+                </p>
+                <img style="margin-left: auto; margin-right: auto;" class="img-responsive" src="img/Relatedness/patchRichnessResult.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content-section-c">
+        <div class="container">
+            <h2>Supplementary Tables depicting the results of the Kolmogorov-Smirnov (KS-test) between environments 3 and 4, with the relatedness threshold value kept constant at 0.5</h2>
+            <div class="clearfix"></div>
+            <div class="row">
+                <img style="margin-left: auto; margin-right: auto;" class="img-responsive" src="img/Relatedness/env3vs4_table.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content-section-b">
+        <div class="container">
+            <h2>Supplementary Tables depicting statistical results from Kolmogorov-Smirnov (KS-test) tests completed</h2>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/ksTestEnv1_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/ksTestEnv2_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/ksTestEnv3_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/ksTest_env1vsenv2_table.png" alt="">
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="img/Relatedness/ksTest_env1vsenv3_table.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="breakdown" class="content-section-e">
+        <div class="container">
+            <div class="row">
+                <h2>Development Work Done</h2>
+                <div class="clearfix"></div>
+                <p class="lead2">
+                    <br> - Adaptation of smart sweepers framework to introduce resources, agents, groups, EA and NE
+                    <br> - Creation of basic ANN
+                    <br> - Introduced death functionality for both groups (and group colour representation) and agents
+                    <br> - Adaptation of ANN to improve input and output functionality
+                    <br> - ANN input scaling (to allow agents not to move and be selfish if they cannot see a resource)
+                    <br> - Addition of agent field of view defining how far they can see
+                    <br> - Snapshot functionality allowing snapshots of system at any point and to restart the system from a snapshot
+                    <br> - Initial EA crossover, mutate and group methods algorithm allowing basic evolution of agents
+                    <br> - Finalization of EA algorithm for relatedness based experiments
+                    <br> - KdNode implementation to allow fast Log N resource location by agents
+                    <br> - Experiment specific statistic analysis
+                    <br> - Compare agents based on hamming distance based relatedness function
+                    <br> - Calculation of both group and population diversity based on agent relatedness
+                    <br> - Set-up of website framework
+                    <br> - Website CSS and HTML design
+                </p>
+                <div class="centered">
+                    <a href="https://bitbucket.org/ZMel/poseidon" target="_blank" class="btn btn-default btn-lg" type="button">Framework</a>
+                    <a href="documentation.html" target="_blank" class="btn btn-default btn-lg" type="button">Framework Documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="conclusion" class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-6">
+                    <h2>Conclusions</h2>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <p class="lead">
+                        This study supports the effectiveness of agent-based models as complementary tools to mathematical models formulated about biological processes and using this information we were able to develop an ABS.
+                        <br>
+                        <br> The simulation allowed us to replicate the evolutionary and adaptive processes of nature, while observing the impact of changing key parameters (such as genetic relatedness and patch richness), which cannot be done in real-world biological experiments.
+                        <br>
+                        <br> The results from this simulation agree with the first organizational trend presented by Reeve and Hölldobler and the first hypothesis of this study. Therefore genetic relatedness has a strong effect on the degree of cooperation experienced contrary to the belief of studies by Nowak <em>et al</em> and Wilson.
+                        <br>
+                        <br> In a similar vein to the results obtained by Reeve and Hölldobler, this simulation did not prove that relatedness is the only necessity for the occurrence within-group cooperation. Other factors, such as Patch Richness and environmental competition, were also found to play an effect.
+                        <br>
+                        <br> A possible avenue of future work would firstly include a repetition of this study on more environments in order to compare the strength that both relatedness and patch richness have on the cooperation values obtained.
+                        <br>
+                        <br> Another addition may include different configurations of starting agents (number of agents, number of groups and so on), to determine if the evolution of the system was solely a consequence of the experimental measures or rather as a direct consequence of the configuration of starting agents in the environment.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-4">
+                    <img class="img-responsive" src="img/antBrain.png" alt="">
+                </div>
+                <div class="col-lg-5 col-sm-4">
+                    <img class="img-responsive image-spacer" src="img/dna.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="banner">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-heading">Contact</h2>
+                    <div class="col-md-4">
+                        <h3 class="section-heading">Zac Melnick</h3>
+                <p class="lead">MLNZAC001
+                    <br>mlnzac001@myuct.ac.za
+                    <br>072 365 0880
+                    <br>Genetic Relatedness</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section-heading">Jacob Clarkson</h3>
+                <p class="lead">CLRJAC004
+                    <br>jacobhclarkson@gmail.com
+                    <br>078 348 4450
+                    <br>Between-Group Competition</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="section-heading">Paul Wanjohi</h3>
+                <p class="lead">WNJPAU001
+                    <br>paul.mwanjohi@gmail.com
+                    <br>072 460 7568
+                    <br>Group Size</p>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.banner -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Zac Melnick; Jacob Clarkson; Paul Wanjohi 2015
+                    </p>
+                    <p class="copyright text-muted">Supervisor: Dr Geoff Nitschke</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

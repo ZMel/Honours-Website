@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Poseidon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-mine navbar-fixed-top" role="navigation">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: #FFFFFF" href="index.html">Poseidon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#objectives">Objectives</a>
+                    </li>
+                    <li>
+                        <a href="#environments">Resource Environments</a>
+                    </li>
+                    <li>
+                        <a href="#parameters">Simulation Parameters</a>
+                    </li>
+                    <li>
+                        <a href="#results">Results</a>
+                    </li>
+		    <li>
+                        <a href="#conclusions">Conclusions</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="intro-message-experiment">
+                        <h3>The Effect of Between-Group Competition on the Evolution of Within-Group Cooperation</h2>
+                        <h3>Jacob H. Clarkson</h3>
+                        <hr class="intro-divider">
+                    </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+    <div id="intro" class="content-section-d">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Introduction</h2>
+                <p class="lead">
+                    "The Nested Tug-of-War model for the evolution of cooperation places a strong emphasis on the importance of between-group competition for the evolution of within-group cooperation (cooperation between agents within groups). The level of between-group competition is determined by the patchiness of resources in an environment. To test this model empirically, an Agent-Based System was created that simulates a simple foraging task. Agents in the simulation are driven by artificial neural network controllers that determine their behaviour. These controllers are adapted using Neuro-Evolution in order for agent behaviour to change over time. Multiple experiments were conducted in environments of varying resource patchiness. It was found that resource patchiness has a statistically significant effect on the level of within-group cooperation that evolves. As predicted by the Nested Tug-of-War model, increasing the level of between-group competition in an environment by manipulating resource patchiness led to an increase in the level of within-group cooperation that evolved. However, past a threshold of resource patchiness, the opposite effect was observed. This suggests that, in terms of facilitating the evolution of within-group cooperation, there is an optimum level of between-group competition."
+                </p>
+                <div class="centered">
+                    <a href="https://drive.google.com/file/d/0B7CE8RzfeB5odlRzNTVhc1M2bkE/view" target="_blank" class="btn btn-default btn-lg" type="button">Full Research Paper</a>
+                    <a href="https://bitbucket.org/ZMel/poseidon" target="_blank" class="btn btn-default btn-lg" type="button">Source Code</a>
+                    <a href="documentation.html" target="_blank" class="btn btn-default btn-lg" type="button">Documentation</a>
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8"><img class="img-responsive" src="img/darwin.jpg" alt=""></div>
+                <div class="col-md-2"></div>
+            </div-->
+        </div>
+    </div>
+    <div id="objectives" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Objectives</h2>
+                <p class="lead">
+                    The main objective of this research is to examine the relationship between within-group cooperation and between-group competition. Mathematical analysis of the Nested Tug-of-War model reveals that as between-group competition increases, so does within-group cooperation. We wish to find empirical evidence that either supports or refutes this result. Our hypotheses are therefore:
+                </p>
+                <p class="lead"><i>
+                    H<sub>0</sub> : The level of between-group competition has no effect on the evolution of within-group cooperation.</i>
+                </p>
+                <p class="lead"><i>
+                    H<sub>1</sub> : As between-group competition increases, so does the level of within-group cooperation that evolves.</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="environments" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Resource Environments</h2>
+                <p class="lead">
+                    In the Nested Tug-of-War model, the level of between-group competition is altered by manipulating the resource "patchiness" of the environment. In order to explore the effect of between-group competition on the evolution of within-group cooperation, experiments were conducted on each of the five resource environments below:
+                </p>
+                <p>Note: For each of the resource environments, the total number of resource nodes in the world remains fixed. The number of patches into which those nodes are divided, as well as the density of those patches, is what changes to facilitate between-group competition. Smaller, denser patches increase the likelihood that agents from competing groups will have to forage in the same resource patch. Longer distances between patches as they shrink means it is important for agents to get to them quickly, to get the large pay-off for their own group. both of these are reasons that resource patchiness facilitates between-group competition.</p>
+                <div class="col-lg-7 col-sm-6">
+                        <h2>Low Competition Environment</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                           In this environment, there is no resource patchiness whatsoever. Rather, resource nodes are placed in a uniform random distribution. 
+                        </p>
+                        <p class="lead">
+                           This environment represents the lowest possible amount of between-group competition.
+                        </p>
+                        <p class="lead">
+                            Number of resource patches: 0
+                        </p>
+                        <p class="lead">
+                            Resource density: 0.003
+                        </p>
+                    </div>
+                <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env1.png" alt="">   
+                </div>
+                <div class="col-lg-7 col-sm-6">
+                        <h2>Low-Medium Competition Environment</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                           Patches are introduced in this environment. Rather than resource nodes being placed randomly, they are organized into patches.
+                        </p>
+                        <p class="lead">
+                           This is a relatively low competition environment, since the patches are large and not particularly dense.
+                        </p>
+                        <p class="lead">
+                            Number of resource patches: 5
+                        </p>
+                        <p class="lead">
+                            Resource density: 0.07
+                        </p>
+                    </div>
+                <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env2.png" alt="">   
+                </div>
+                <div class="col-lg-7 col-sm-6">
+                        <h2>Medium Competition Environment</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                           This environment represents a situation of moderate between-group competition.
+                        </p>
+                        <p class="lead">
+                            Number of resource patches: 10
+                        </p>
+                        <p class="lead">
+                            Resource density: 0.01
+                        </p>
+                    </div>
+                <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env3.png" alt="">   
+                </div>
+                <div class="col-lg-7 col-sm-6">
+                        <h2>Medium-High Competition Environment</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                           A situation of moderately high competition, with the number of patches and patch density increased. 
+                        </p>
+                        <p class="lead">
+                           This environment represents the lowest possible amount of between-group competition.
+                        </p>
+                        <p class="lead">
+                            Number of resource patches: 15
+                        </p>
+                        <p class="lead">
+                            Resource density: 0.016
+                        </p>
+                    </div>
+                <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env4.png" alt="">   
+                </div>
+                <div class="col-lg-7 col-sm-6">
+                        <h2>High Competition Environment</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                           The very high patch density here creates a scenario of high between-group competition intensity.
+                        </p>
+                        <p class="lead">
+                            Number of resource patches: 20
+                        </p>
+                        <p class="lead">
+                            Resource density: 0.02
+                        </p>
+                    </div>
+                <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env5.png" alt="">   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="parameters" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Simulation Parameters</h2>
+                <p class="lead">
+                   Presented here is the full set of simulation parameters used for experimentation: 
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <p>General Parameters Used in All Experiments</p>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <img class="img-responsive" src="img/Competition/jacob-params.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="row">
+                <p>Parameters Varied Between Experiments</p>
+                <p>(Note: R is the total number of resource nodes in the environment. N is the total population of agents. G is the number of groups into which the population is divided. d is the resource patch density of an environment.)</p>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <img class="img-responsive" src="img/Competition/jacob-experiment-params.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="results" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Experimental Results</h2>
+                <p class="lead">
+		It was found that differing levels of competition, facilitated by resource patchiness, had a significant effect on the level of cooperation that evolved among agents within groups. Increasing the level of competition in an environment led to higher levels of within-group cooperation. However, this was only true up to a point, after which further increases to between-group competition had the opposite effect.
+		</p>
+			<img class="img-responsive" src="img/Competition/newCoopVtime.png" alt="">
+			<figcaption>Figure 1. Evolution of within-group cooperation over time in different environments (Where p is the number of resource patches in the environment, and d is the density of these resource patches. Values averaged over 250 runs in each resource environment).</figcaption>
+		<p class="lead">
+			
+		<p class="lead"> Figure 1. above shows the level of cooperation that evolved in 200 generations for groups in each of the five resource environments. As you can see, agents in a moderately patchy environment (therefore with moderate levels of between-group competition) evolved a higher level of cooperation than any other group. Figure 2. shows the same data averaged over all generations, and more readily shows the rise and fall in within-group cooperation as the level of between-group competition increases.</p>
+
+                </p>
+		<div class="col-lg-offset-2 col-lg-8">
+		<img class="img-responsive" src="img/Competition/newBar.png" alt="">
+			<figcaption>Figure 2. Average within-group cooperation per resource environment. Environments range from non-patchy random uniform distribution of resources (d=0.003) to dense patches of resources (d=0.02). Difference between d=0.003 and d=0.007 is not significant, with p=0.08. Difference between all other environments is significant, with p<0.01. Averages for each environment calculated over 250 runs.</figcaption>
+		</div>
+
+            </div>
+        </div>
+    </div>
+    <div id="conclusions" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Conclusions</h2>
+                <p class="lead">
+			Empirical evidence in support of the Nested Tug-of-War model was found. It was shown that between-group competition, facilitated by resource patchiness, has a significant effect on the evolution of within-group cooperation. <i>H<sub>0</sub></i> is therefore rejected. Furthermore, it was found that increasing between-group competition leads to increased levels of within-group cooperation. This is strong evidence in favour of <i>H<sub>1</sub></i>.  
+		</p>
+		<p class="lead">
+			The non-linearity of the relationship between between-group competition and within-group cooperation was unexpected. This finding suggests that there may be an optimal level of competition required for the evolution of cooperation dependent on a specific environment. Determining this optimal level of competition as a factor of various environmental factors (such as colony size and genetic relatedness, etc.) is a promising avenue for future research.
+		</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="content-section-c">
+
+            <div class="container">
+
+                <div class="row">
+                        <div class="clearfix"></div>
+                        <h2>Agent Based System</h2>
+                        <p class="lead">
+                            Agent Based Systems are a subset of Artificial Intelligence (AI) [Langton 1986]. ABS are made up of intelligent agents [Wooldridge 1997] which are autonomous systems able to observe and act within an environment.
+                        </p>
+
+                </div>
+
+            </div>
+    <!-- </div> -->
+    
+       
+        <div>
+            <div id="contact" class="banner">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-heading">Contact</h2>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Zac Melnick</h3>
+                            <p class="lead">MLNZAC001
+                                <br>mlnzac001@myuct.ac.za
+                                <br>072 365 0880
+                                <br>Genetic Relatedness</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Jacob Clarkson</h3>
+                            <p class="lead">CLRJAC004
+                                <br>jacobhclarkson@gmail.com
+                                <br>078 348 4450
+                                <br>Between-group Competition</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Paul Wanjohi</h3>
+                            <p class="lead">WNJPAU001
+                                <br>paul.mwanjohi@gmail.com
+                                <br>072 460 7568
+                                <br>Group Size</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.banner -->
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <p class="copyright text-muted">Copyright &copy; Zac Melnick; Jacob Clarkson; Paul Wanjohi 2015
+                            </p>
+                            <p class="copyright text-muted">Supervisor: Dr Geoff Nitschke</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- JavaScript -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Poseidon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-mine navbar-fixed-top" role="navigation">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: #FFFFFF" href="#">Poseidon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#background">Background</a>
+                    </li>
+                    <li class="dropdown dropdown-pc hidden-xs hidden-sm"><a href="#experiments">Experiments<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="relatedness.html">Relatedness</a></li>
+                            <li><a href="competition.html">Competition</a></li>
+                            <li><a href="groupSize.html">Group Size</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-mobile hidden-md hidden-lg"><a class="dropdown-toggle" data-toggle="dropdown" href="">Experiments<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="relatedness.html">Relatedness</a></li>
+                            <li><a href="competition.html">Competition</a></li>
+                            <li><a href="groupSize.html">Group Size</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#results">Results</a>
+                    </li>
+                    <li>
+                        <a href="#breakdown">Work Breakdown</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Poseidon</h1>
+                        <h3>An Agent Based Simulation</h3>
+                        <hr class="intro-divider">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+    <div id="intro" class="content-section-d">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Introduction</h2>
+                <p class="lead">
+                    Cooperative behaviour can be found in many insect societies, and is advantageous to the long term survival of a species.
+                    <br>
+                    <br> Observations of cooperative societies by have revealed several organizational trends relating to the increase in cooperation between members of certain species [1]. These trends have provided insight into the origins of cooperation, and informed the design of the Nested Tug-of-War model.               
+                </p>
+                    <br>
+                <p class="lead3">
+                    <br>(i) Cooperation is more likely to occur between agents which are genetically related.
+                    <br>(ii) Large colony sizes lead to higher levels of cooperation.
+                    <br>(iii) Between-group competition is strongly associated with within-group cooperation.
+                </p>
+                <p class="lead">
+                    <br> Our objective was to simulate a biological species in order to test that the above three organizational trends emerge in the Nested Tug-of-War model, as claimed by its authors. In order to do this, an Agent-Based simulation was constructed which facilitated three separate experiments, the aim of each being to evaluate a single aspect of the model. Together, our results serve as an assessment of the model as a whole and provided insight into the possible origins of cooperation in biological societies.
+                </p>
+                 <div class="centered">
+                        <a href="https://bitbucket.org/ZMel/poseidon" target="_blank" class="btn btn-default btn-lg" type="button">Source Code</a>
+                        <a href="documentation.html" target="_blank" class="btn btn-default btn-lg" type="button">Documentation</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="background" class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Eusocial creatures</h2>
+                <p class="lead">
+                    Eusocial creatures, such as ants and termites, exhibit cooperation on an unprecedented scale. Each individual comprising these superorganisms behaves not for their own benefit, but for the benefit of the collective. They are some of the most successful organisms in the world.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="content-section-b">
+            <div class="container">
+                <h2>Cooperation and The Nested Tug-of-War Model</h2>
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <div class="row">
+                    <h3>Nested Tug-of-War Model</h3>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-7 col-sm-6">
+                        <p class="lead">
+                            How eusociality (and cooperation in general) may have evolved is a question of great interest in the field of biology. Classical Darwinism, which acts on a purely individual and competitive basis, does not seem able to properly account for cooperative and altruistic behaviour to the degree which it is observed in nature. Several theories, such as kin selection [2], reciprocal altruism [3], and tug-of-war theory [1] offer alternative explanations, or augmentations to classical Darwinism, in order to understand how cooperation may have evolved.
+                            <br>
+                            <br>This research focused primarily on the Nested Tug-of-War model [1]. In this model agents are faced with the problem of how to partition their energy between investment in between-group competition versus investment in within-group competition [1], as seen in Fig 1. This model suggests that cooperative behaviour emerges as a bi-product of particular organizational trends. Examples of these include factors such as genetic relatedness between agents in a group, the number of individuals in a group, as well as the level of between-group competition, which are all expected to play a role in evolution and specifically increase of cooperation found in species.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive" src="img/group.png" alt="">
+                        <figcaption>Fig 1. - Diagrammatic representation of the Nested Tug-of-War Structure</figcaption>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <h3>Cooperation</h3>
+                    <p class="lead">
+                        In the Nested Tug-of-War model, the concept of cooperation was never specifically defined. For the purpose of this research cooperation is defined as an agents expenditure of energy towards the betterment of their group. Where at any time, an agent may choose to expend their energy by foraging for resources for their group or rather remain motionless. In this scenario, the agent is cooperating.
+                        <br>
+                        <br> By expending energy towards their groups, agents act cooperatively, alternatively, by remaining motionless, agents conserve their own energy, and receive a share of the resources collected by other agents. In this situation, the agent is acting selfishly and competing within its own group.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="agentdesign" class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Agent Based Systems</h2>
+                    <p class="lead">
+                        Agent Based Systems are a subset of Artificial Intelligence (AI) [4]. ABS are made up of intelligent agents [5] which are autonomous systems able to observe and act within an environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Agents</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            The agent population consisted of multiple agents, each with a randomly generated Artificial Neural Network (ANN), making use of a Cauchy Distribution for weight initialization.
+                            <br>
+                            <br> ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain [4]. The links between the nodes in the ANN can be thought of as synapses.
+                            <br>
+                            <br> ANNs are able to provide a robust approach to approximating functions where, as shown by Cybenko [5] a fully-connected neural network with a single hidden layer is able to approximate any continuous function (Universal Function Approximator). These structures are therefore useful when simulating biological behaviour.
+                            <br>
+                            <br> The ANN held a one to one mapping [6] where the genotype consisted of a vector of floating point values which represented the ANN weights. Agents required an ANN design that was able to represent both cooperative and selfish behaviour and thus the inputs needed to be carefully chosen.
+                            <br>
+                            <br> The inputs to the ANN therefore consisted of a scaled value of both the agent's current energy and the squared distance between the agent and its closest resource. Based on this input the agent's ANN output value would determine how they would like to act within the environment and foraging task at hand (act selfishly or cooperatively).
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="row">
+                            <img class="img-responsive image-spacer" src="img/agentANN.png" alt="">
+                            <figcaption style="text-align: center;">Fig 2. - Architecture of the agent controller defined by a fully connected multi-layer neural network</figcaption>
+                            <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                            <figcaption style="text-align: center;">Fig 3. - Representation of Agent and Agent brain.</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Controller Design</h2>
+                    <p class="lead">
+                        Automated controller design [7, 8] is a process used to create novel agent controllers without the need for human interaction. Controllers are responsible for the actions of agents within an environment, and must be designed to be able to perform as best as possible for the task at hand (for example, resource foraging, reproduction, collaborative box pushing).
+                        <br>
+                        <br> Although it is possible for these to be designed by hand (known as heuristic controllers), these are limited as they cannot anticipate all possible situations in complex environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Neuro Evolution</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            Neuro-Evolution (NE) [9] is the adaptation of Artificial Neural Networks (ANNs) using Evolutionary Algorithms (EAs) and follows the process as detailed by Fig 4. NE is used to adapt the weights of an ANN until an optimal configuration is found.
+                            <br>
+                            <br> It does so by using an EA to search for specific network configurations within a set of candidate solutions by crossing over and mutating agent ANNs, finally producing adapted offspring. The weights control an agent’s behaviour [10], and therefore as these weights are adapted the agent’s behaviour is refined.
+                            <br>
+                            <br> This process results in the autonomous creation and evolution of agent controllers. Due to the use of the EAs, NE is helpful to use in situations where we do not know correct training examples and acts as a form of unsupervised learning.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/neuroEvolution.png" alt="">
+                        <figcaption style="text-align: center;">Fig 4. - Neuro-Evolution (NE) Process.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experiments" class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Experimentation</h2>
+                    <p class="lead">
+                        The Nested Tug-of-War model by Reeve and Hölldobler, predicts the emergence of organizational trends that are observed in cooperative societies in the biological world. The following three trends were the focus of the studies.
+                    </p>
+                    <p class="lead3">
+                        Within-group cooperation increases as the level of genetic relatedness between group members increases.
+                        <br> Within-group cooperation increases as group size increases.
+                        <br> Within-group cooperation increases as between-group competition increases.
+                    </p>
+                    <p class="lead">
+                        Our objective was to use an Agent-Based System to find evidence for the predictions of the Nested Tug-of-War model. To achieve this, three studies were conducted, each aiming to assess the model according to one of the trends mentioned above.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Genetic Relatedness</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            This study investigated the origins of cooperation by analysing the effects of individual relatedness and patch richness on the levels of cooperation observed. As a secondary measure, other factors leading to the evolution of cooperation were explored.
+                            <br>
+                            <br> A range of relatedness values were tested in four different environments with varying resource distributions. The results showed a positive relationship between agent relatedness and the level of cooperation experienced.
+                            <br>
+                            <br> The study was therefore able to agree with the trend mentioned in the Nested Tug-of-War model, indicating that higher levels of agents relatedness lead to higher levels of within-group cooperation. The results further indicated that other factors, for example, Patch Richness (environmental competition), were also found to affect the levels of cooperation found.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/dna.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive" src="img/colony.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Group Size</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            The Nested Tug-of-War model predicts higher within and between group cooperation levels in large groups when compared to small groups of agents. Artificial Life (AL) experiments are conducted to test the null hypothesis: <em>Group size effects the level of cooperation of a group</em>
+                            <br>
+                            <br> The AL experiments conducted used 2 groups where on of the groups starting size if fixed to 2000 and the other had a varying size of 200, 400, 600, 800 and 1000 agents.
+                            <br>
+                            <br> The level of cooperation in this study was defined by a fitness function. The results of the experiment demonstrated that the starting size of a group, and hence its group size, has an effect on the level of cooperation, in particular, the levels of between group cooperation. An example of the groups fitness is illustrated below.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Between-Group Competition</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            Competition was facilitated by resource patchiness. Five difference environments were created with different resource distributions.
+                            <br>
+                            <br> The simulation was run 250 times up until 200 generations on each of the resource environments. The level of cooperation that evolved was recorded.
+                            <br>
+                            <br> Results from the experiments show that there was a statistically significant effect of between-group competition on within-group cooperation.
+                            <br>
+                            <br> Increasing between-group competition led to increased within-group cooperation, but only up to a point. Increasing the level of competition between groups beyond this point produced the opposite effect.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/Competition/env1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="results" class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Results</h2>
+                    <p class="lead">
+                        Descriptive results and statistics of the above studies can be found at the following locations:
+                    </p>
+                    <div class="centered">
+                        <a href="relatedness.html#results" target="_blank" class="btn btn-default btn-lg" type="button">Relatedness</a>
+                        <a href="groupSize.html#results" target="_blank" class="btn btn-default btn-lg" type="button">Group Size</a>
+                        <a href="competition.html#results" target="_blank" class="btn btn-default btn-lg" type="button">Competition</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="references" class="content-section-d">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>References</h2>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[1]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            H Kern Reeve and Bert Hölldobler. 2007. The emergence of a superorganism through intergroup competition. Proceedings of the National Academy of Sciences 104, 23 (2007), 9736–9740.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[2]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            William D Hamilton. 1963. The evolution of altruistic behavior. American naturalist (1963), 354–356.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[3]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            Robert L. Trivers. 1971. The Evolution of Reciprocal Altruism. The Quarterly Review of Biology 46, 1 (1971), pp. 35–57. http://www.jstor.org/stable/2822435
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[4]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            Christopher G. Langton. 1986. Studying artificial life with cellular automata. Physica D: Nonlinear Phenomena 22, 1 (1986), 120–149.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[5]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            Michael Wooldridge. 1997. Agent-based software engineering. IEE Proceedings-software 144, 1 (1997), 26– 37.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[6]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            T. M. Mitchell. Machine learning. 1997. Burr Ridge, IL: McGraw Hill, 45, 1997.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[7]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            G. Cybenko. Approximation by superpositions of a sigmoidal function. Mathematics of control, signals and systems, 2(4):303–314, 1989.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[8]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            X. Yao. Evolving artificial neural networks. Proceedings of the IEEE, 87(9):1423–1447, 1999.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[9]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            B. Filipic, T. Urbancic, and V. Krizman. A combined machine learning and genetic algorithm approach to controller design. Engineering Applications of Artificial Intelligence, 12(4):401–409, 1999.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[10]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            A. Varˇsek, T. Urbancic, and B. Filipic. Genetic algorithms in controller design and tuning. Systems, Man and Cybernetics, IEEE Transactions on, 23(5):1330–1339, 1993.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[11]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            R. Miikkulainen. Neuroevolution, pages 716–720. Encyclopedia of Machine Learning. Springer, 2010.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="lead col-sm-offset-1 col-sm-1">
+                            <b>[12]</b>
+                        </p>
+                        <p class="lead col-lg-8">
+                            G. Palm. Warren McCulloch and Walter Pitts: A Logical Calculus of the Ideas Immanent in Nervous Activity, pages 229–230. Brain Theory. Springer, 1986. William D Hamilton. 1963. The evolution of altruistic behavior. American naturalist (1963), 354–356.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="breakdown" class="content-section-e">
+        <div class="container">
+            <div class="row">
+                <h2>Development Work Done</h2>
+                <div class="clearfix"></div>
+                <h3>Zac</h3>
+                <p class="lead">
+                    <br> - Adaptation of smart sweepers framework to introduce resources, agents, groups, EA and NE
+                    <br> - Creation of basic ANN
+                    <br> - Introduced death functionality for both groups (and group colour representation) and agents
+                    <br> - Adaptation of ANN to improve input and output functionality
+                    <br> - ANN input scaling (to allow agents not to move and be selfish if they cannot see a resource)
+                    <br> - Addition of agent field of view defining how far they can see
+                    <br> - Snapshot functionality allowing snapshots of system at any point and to restart the system from a snapshot
+                    <br> - Initial EA crossover, mutate and group methods algorithm allowing basic evolution of agents
+                    <br> - Finalization of EA algorithm for relatedness based experiments
+                    <br> - KdNode implementation to allow fast Log N resource location by agents
+                    <br> - Experiment specific statistic analysis
+                    <br> - Compare agents based on hamming distance based relatedness function
+                    <br> - Calculation of both group and population diversity based on agent relatedness
+                    <br> - Set-up of website framework
+                    <br> - Website CSS and HTML design
+                </p>
+                <h3>Jacob</h3>
+                <p class="lead">
+                    <br> - Design, implementation, and optimization of ANN agent controllers
+                    <br> - Adaptation of feedforward, mutation, crossover, and relatedness methods to work with new ANN topology
+                    <br> - Rank based selection method for Evolutionary Algorithm (Linear Rank Based Selection)
+                    <br> - Experimental run automation
+                    <br> - Calculations for parameter tuning
+                    <br> - Experiments to determine general baseline parameters.
+                    <br> - Alternative group generation system (maintains fixed number of groups with fixed population size)
+                    <br> - Additional constructors for snapshot restart system.
+                    <br> - Experiment specific resource configuration system (design and testing of different resource environments with different patchiness and a reliable density metric)
+                    <br> - Experiment specific data collection system
+                    <br> - Experiment specific statistical analysis
+                    <br> - Code clean-up
+                    <br> - Documentation
+                </p>
+                <h3>Paul</h3>
+                <p class="lead">
+                    - Adaptation of windows framework to work on Linux
+                    <br> - Addition of special member functions to all classes
+                    <br> - Improved memory management
+                    <br> - Removed compile time warning
+                    <br> - Adaptation of flattened ANN to introduce pointers and improve speed
+                    <br> - Improvement of tournament selection and addition of rank based selection
+                    <br> - Improved group and agent energy update
+                    <br> - Experiment specific statistic analysis
+                    <br> - Improved Utilities class containing common mathematical methods and random number generation
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="contact" class="banner">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-heading">Contact</h2>
+                    <div class="col-md-4">
+                        <h3 class="section-heading">Zac Melnick</h3>
+                        <p class="lead">MLNZAC001
+                            <br>mlnzac001@myuct.ac.za
+                            <br>072 365 0880
+                            <br>Genetic Relatedness</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-heading">Jacob Clarkson</h3>
+                        <p class="lead">CLRJAC004
+                            <br>jacobhclarkson@gmail.com
+                            <br>078 348 4450
+                            <br>Between-Group Competition</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-heading">Paul Wanjohi</h3>
+                        <p class="lead">WNJPAU001
+                            <br>paul.mwanjohi@gmail.com
+                            <br>072 460 7568
+                            <br>Group Size</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.banner -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p class="copyright text-muted">Copyright &copy; Zac Melnick; Jacob Clarkson; Paul Wanjohi 2015
+                        </p>
+                        <p class="copyright text-muted">Supervisor: Dr Geoff Nitschke</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
